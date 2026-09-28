@@ -1,0 +1,4 @@
+interface:
+  display_name: "Jev Decide"
+  short_description: "Ask Jev to choose among concrete next steps"
+  default_prompt: "Use $jev-decide to recommend which existing test to run first for this change."

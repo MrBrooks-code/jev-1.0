@@ -1,0 +1,15 @@
+{
+  "question": "Which component should a developer investigate first, based on the observed failure?",
+  "state": {
+    "scenario": "Synthetic demo, not a real incident.",
+    "symptom": "Users can sign in, but downloading their invoice returns HTTP 500.",
+    "evidence": "The server log for that request reports an exception in renderInvoicePdf. Authentication succeeds and the invoice database query returns the expected record."
+  },
+  "options": {
+    "authentication": "Investigate sign-in and session validation.",
+    "invoice_rendering": "Investigate the code that converts an invoice record into a PDF.",
+    "database": "Investigate database connectivity and invoice queries."
+  },
+  "min_confidence": 0.8,
+  "min_margin": 0.15
+}

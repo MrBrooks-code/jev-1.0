@@ -1,0 +1,14 @@
+{
+  "name": "jev-hello-world",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file-if-exists=.env hello.mjs",
+    "demo": "node --env-file-if-exists=.env hello.mjs --dry-run",
+    "jev:check": "node --env-file-if-exists=.env skills/jev-decide/scripts/decide.mjs --doctor",
+    "jev:preview": "node --env-file-if-exists=.env skills/jev-decide/scripts/decide.mjs examples/decision.json",
+    "jev:try": "node --env-file-if-exists=.env skills/jev-decide/scripts/decide.mjs examples/decision.json --live",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "engines": { "node": ">=22" }
+}
